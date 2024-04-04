@@ -1,0 +1,26 @@
+﻿<Window x:Class="Сетевое_прогр._Практика__16_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Сетевое_прогр._Практика__16_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+            <Label Content="Колчиество" Height="50" Width="100"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <TextBox x:Name="tb1" Width="100" Height="40"/>
+            <Label Content="из" Height="50" Width="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <ComboBox x:Name="frombox" Width="100" Height="40" />
+            <Label Content="в" Height="50" Width="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="tobox" Width="100" Height="40" />
+            <Button Content="Convert" Height="70" Width="100" Margin="10,0,0,0" Click="Button_Click"/>
+        </StackPanel>
+            <WebBrowser x:Name="vb" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="500" Grid.Row="1"/>
+            <TextBox x:Name="lb" Height="40" VerticalAlignment="Top" Width="400"/>
+    </Grid>
+</Window>
